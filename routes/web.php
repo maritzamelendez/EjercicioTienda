@@ -19,15 +19,15 @@ Route::get('home', function(){
 	return view('home');
 })->name('home');
 
-Route::get('/articulos', 'ArticulosController@index')->name('articulos');
+Route::resource('articulos', 'ArticulosController');
 
-Route::get('/carnes', 'CarnesController@index')->name('carnes');
+Route::resource('carnes', 'CarnesController');
 
-Route::get('/cereales', 'CerealesController@index')->name('cereales');
+Route::resource('cereales', 'CerealesController');
 
-Route::get('/frutas', 'FrutasController@index')->name('frutas');
+Route::resource('frutas', 'FrutasController');
 
-Route::get('/lacteos', 'LacteosController@index')->name('lacteos');
+Route::resource('lacteos', 'LacteosController');
 
 
 

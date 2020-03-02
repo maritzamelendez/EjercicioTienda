@@ -15,11 +15,12 @@ class CarnesController extends Controller
     {
         $carne = [
             ['title' => 'Carne molida'],
-            ['title' => 'Chuletas'],
             ['title' => 'Jamón'],
-            ['title' => 'Salchichas'],
+            ['title' => 'Chuletas'],
             ['title' => 'Tocino'],
+            ['title' => 'Salchichas'],    
         ];
+        asort($carne);
         return view('carnes', compact('carne'));
     }
 

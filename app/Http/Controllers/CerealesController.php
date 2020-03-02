@@ -15,11 +15,12 @@ class CerealesController extends Controller
     {
         $cereal = [
             ['title' => 'Arroz'],
-            ['title' => 'Avena'],
-            ['title' => 'Cebada'],
             ['title' => 'Palomitas de maíz'],
+            ['title' => 'Avena'],
             ['title' => 'Pan de trigo'],
+            ['title' => 'Cebada'],   
         ];
+        asort($cereal);
         return view('cereales', compact('cereal'));
     }
 

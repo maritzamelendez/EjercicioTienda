@@ -15,11 +15,12 @@ class LacteosController extends Controller
     {
         $lacteo = [
             ['title' => 'Crema'],
-            ['title' => 'Huevos'],
             ['title' => 'Leche'],
-            ['title' => 'Queso'],
+            ['title' => 'Huevos'],
             ['title' => 'Yogurt'],
+            ['title' => 'Queso'],
         ];
+        asort($lacteo);
         return view('lacteos', compact('lacteo'));
     }
 

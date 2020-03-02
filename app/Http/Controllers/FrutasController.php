@@ -15,11 +15,12 @@ class FrutasController extends Controller
     {
         $fruta = [
             ['title' => 'Manzana'],
-            ['title' => 'Naranja'],
             ['title' => 'Pera'],
-            ['title' => 'Tomates'],
+            ['title' => 'Naranja'],
             ['title' => 'Uvas'],
+            ['title' => 'Tomates'],
         ];
+        asort($fruta);
         return view('frutas', compact('fruta'));
     }
 

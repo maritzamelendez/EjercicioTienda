@@ -15,11 +15,12 @@ class ArticulosController extends Controller
     {
         $articulo = [
             ['title' => 'Aromatizantes'],
-            ['title' => 'Bolsas de basura'],
             ['title' => 'Detergente líquido'],
-            ['title' => 'Esponjas'],
+            ['title' => 'Bolsas de basura'],
             ['title' => 'Quitamanchas'],
+            ['title' => 'Esponjas'],
         ];
+        asort($articulo);
         return view('articulos', compact('articulo'));
 
     }
